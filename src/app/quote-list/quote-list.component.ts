@@ -43,6 +43,7 @@ export class QuoteListComponent implements OnInit {
   }
   //removeQuote function will remove the selected quote from the QUOTES array
   //this works by displaying the quote IDs that have NOT been removed
+  //Angular framework binds DOM with the angular Array(quotes) that is being displayed 
   removeQuote (id) {
     this.quotes = this.quotes.filter(
       (oneQuote) => oneQuote.id !== id
